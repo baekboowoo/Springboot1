@@ -44,6 +44,7 @@ public class MemoService {
         mapper.update(dto);
     }
 
+
     @Transactional(rollbackFor = Exception.class)
     public void removeMemo(int id) {
         log.info("MemoService's removeMemo Call! ");
