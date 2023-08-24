@@ -12,12 +12,12 @@ import javax.sql.DataSource;
 public class MybatisConfig {
 
     @Autowired
-    private DataSource dataSource2;
+    private DataSource dataSource;
 
     @Bean
     public SqlSessionFactory sqlSessionFactory() throws Exception {
         SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
-        sessionFactory.setDataSource(dataSource2);
+        sessionFactory.setDataSource(dataSource);
         return sessionFactory.getObject();
     }
 

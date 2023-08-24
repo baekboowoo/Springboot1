@@ -51,6 +51,12 @@ dependencies {
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.1'
     testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:2.3.1'
 
+    //ORM_JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    //ASSERT TEST
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+
 }
 
 tasks.named('test') {
